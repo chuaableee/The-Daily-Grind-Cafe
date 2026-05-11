@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind | Cozy Corners</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">The Daily Grind</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><button class="nav-btn" onclick="orderAlert()">Order Now</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Brewed with Heart.</h1>
+            <p>Find your cozy corner in the city.</p>
+            <a href="#menu" class="btn">Explore the Menu</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>The Daily Grind started with a simple idea: that coffee should be an experience, not just a caffeine fix.
+                    Nestled in the heart of the town, our shop features reclaimed wood, soft jazz, and the aroma of
+                    freshly roasted beans.</p>
+                <p>Whether you're here to finish your novel or catch up with an old friend, we have a seat waiting for
+                    you.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=600"
+                    alt="Cozy Cafe Interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Handcrafted Selection</h2>
+        <div class="menu-grid">
+
+           <!-- Item 1 -->
+           <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&q=80&w=400"
+                alt="Lavender Latte">
+            <h3>Honey Lavender Latte</h3>
+            <p>Espresso, steamed milk, organic honey, and dried lavender.</p>
+            <span class="price">₱185.00</span>
+
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="small">Small (Standard)</option>
+                    <option value="medium">Medium (+₱25)</option>
+                    <option value="large">Large (+₱40)</option>
+                </select>
+
+                <span class="add-ons-title">Customize:</span>
+                <ul class="add-ons-list">
+                    <li><label><input type="checkbox"> Extra Shot</label> <span>+₱45</span></li>
+                    <li><label><input type="checkbox"> Oat Milk</label> <span>+₱35</span></li>
+                    <li><label><input type="checkbox"> Extra Honey</label> <span>+₱15</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-item">
+            <img src="https://www.shutterstock.com/image-photo/iced-caramel-macchiato-whipped-cream-600nw-2598689709.jpg"
+                alt="Caramel Macchiato">
+            <h3>Cloud Macchiato</h3>
+            <p>Extra-foamy milk with a heavy drizzle of salted caramel.</p>
+            <span class="price">₱195.00</span>
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="small">Small (Standard)</option>
+                    <option value="medium">Medium (+₱25)</option>
+                    <option value="large">Large (+₱45)</option>
+                </select>
+                <span class="add-ons-title">Customize:</span>
+                <ul class="add-ons-list">
+                    <li><label><input type="checkbox"> Extra Caramel</label> <span>+₱20</span></li>
+                    <li><label><input type="checkbox"> Vanilla Syrup</label> <span>+₱20</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=400"
+                alt="Flat White">
+            <h3>Rosemary Flat White</h3>
+            <p>Bold espresso with a hint of earthy fresh rosemary.</p>
+            <span class="price">₱175.00</span>
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="small">Small (Standard)</option>
+                    <option value="medium">Medium (+₱20)</option>
+                    <option value="large">Large (+₱35)</option>
+                </select>
+                <ul class="add-ons-list">
+                    <li><label><input type="checkbox"> Extra Shot</label> <span>+₱45</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=400"
+                alt="Mocha">
+            <h3>Midnight Mocha</h3>
+            <p>Dark chocolate ganache, double espresso, and whipped cream.</p>
+            <span class="price">₱190.00</span>
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="small">Small (Standard)</option>
+                    <option value="medium">Medium (+₱25)</option>
+                    <option value="large">Large (+₱40)</option>
+                </select>
+                <ul class="add-ons-list">
+                    <li><label><input type="checkbox"> Extra Shot</label> <span>+₱45</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&fit=crop&q=80&w=400"
+                alt="Iced Coffee">
+            <h3>Vanilla Cold Foam</h3>
+            <p>24-hour cold brew topped with velvety vanilla cream.</p>
+            <span class="price">₱185.00</span>
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="small">Small (Standard)</option>
+                    <option value="medium">Medium (+₱25)</option>
+                    <option value="large">Large (+₱40)</option>
+                </select>
+                <ul class="add-ons-list">
+                    <li><label><input type="checkbox"> Extra Shot</label> <span>+₱45</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCTQMEDzs4PqBZwZLnG0RHs4fvs1_5m0uQg&s"
+                alt="Matcha">
+            <h3>Ceremonial Matcha</h3>
+            <p>Whisked Japanese green tea with a touch of maple syrup.</p>
+            <span class="price">₱210.00</span>
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="small">Small (Standard)</option>
+                    <option value="medium">Medium (+₱30)</option>
+                    <option value="large">Large (+₱50)</option>
+                </select>
+                <ul class="add-ons-list">
+                    <li><label><input type="checkbox"> Oat Milk</label> <span>+₱35</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Item 14: Hibiscus Tea -->
+<div class="menu-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqAlmSm5Ph2zUIGC7oTs6O3UB7mAq51VODqQ&s"
+        alt="Iced Hibiscus Tea">
+    <h3>Strawberry Hibiscus Fizz</h3>
+    <p>Cold-brewed hibiscus tea with fresh strawberries and a splash of soda.</p>
+    <span class="price">₱165.00</span>
+    <div class="item-options">
+        <select class="size-select">
+            <option value="small">Medium (Standard)</option>
+            <option value="large">Large (+₱30)</option>
+        </select>
+        <ul class="add-ons-list">
+            <li><label><input type="checkbox"> Chia Seeds</label> <span>+₱25</span></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Item 15: Spanish Latte -->
+<div class="menu-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgMK9jkx09L-_XqH4UcyMwSzd5bIUU3fwnUQ&s"
+        alt="Spanish Latte">
+    <h3>Iced Spanish Latte</h3>
+    <p>Our signature espresso with condensed milk for a creamy, sweet finish.</p>
+    <span class="price">₱180.00</span>
+    <div class="item-options">
+        <select class="size-select">
+            <option value="small">Small (Standard)</option>
+            <option value="medium">Medium (+₱25)</option>
+            <option value="large">Large (+₱40)</option>
+        </select>
+    </div>
+</div>
+
+        <!-- Item 7 -->
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7JRH6JQsDOpCaRyzRW2zoI75z4gfhxImxXQ&s"
+                alt="Breakfast">
+            <h3>Avocado Sourdough</h3>
+            <p>Toasted sourdough, chili flakes, and a soft poached egg.</p>
+            <span class="price">₱320.00</span>
+            <div class="item-options">
+                <span class="add-ons-title">Add-ons:</span>
+                <ul class="add-ons-list">
+                    <li><label><input type="checkbox"> Extra Egg</label> <span>+₱40</span></li>
+                    <li><label><input type="checkbox"> Smoked Salmon</label> <span>+₱120</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=400"
+                alt="Croissant">
+            <h3>Butter Croissant</h3>
+            <p>Flaky, golden-brown, and served with house-made jam.</p>
+            <span class="price">₱145.00</span>
+        </div>
+        
+        <!-- Item 9 -->
+        <div class="menu-item">
+            <img src="https://skinnyspatula.com/wp-content/uploads/2022/10/Creamy_Garlic_Chicken_Pasta_0-735x735.jpg"
+                alt="Pasta">
+            <h3>Creamy Garlic Chicken Pasta</h3>
+            <p>Tender chicken in a rich, velvety sauce.</p>
+            <span class="price">₱285.00</span>
+        </div>
+
+<!-- Item 16: Beef Tapa -->
+<div class="menu-item">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/1b/22/12/angus-tapsilog.jpg"
+        alt="Tapsilog">
+    <h3>Angus Beef Tapsilog</h3>
+    <p>Tender Angus beef strips, garlic rice, and two sunny-side-up eggs.</p>
+    <span class="price">₱345.00</span>
+    <div class="item-options">
+        <span class="add-ons-title">Upgrade:</span>
+        <ul class="add-ons-list">
+            <li><label><input type="checkbox"> Upgrade to Fried Rice</label> <span>+₱30</span></li>
+            <li><label><input type="checkbox"> Side of Atchara</label> <span>+₱20</span></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Item 17: Grilled Cheese -->
+<div class="menu-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiaqYDTyYuy1eIa_wuGEWNO6N7wiYRTV3iMw&s"
+        alt="Grilled Cheese">
+    <h3>Truffle Grilled Cheese</h3>
+    <p>Three-cheese blend on sourdough with a hint of truffle oil and tomato soup dip.</p>
+    <span class="price">₱295.00</span>
+    <div class="item-options">
+        <ul class="add-ons-list">
+            <li><label><input type="checkbox"> Add Bacon</label> <span>+₱60</span></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Item 18: Burrito Bowl -->
+<div class="menu-item">
+    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=400"
+        alt="Healthy Bowl">
+    <h3>Southwest Chicken Bowl</h3>
+    <p>Grilled chicken, corn salsa, black beans, and cilantro lime rice.</p>
+    <span class="price">₱310.00</span>
+    <div class="item-options">
+        <ul class="add-ons-list">
+            <li><label><input type="checkbox"> Extra Guacamole</label> <span>+₱55</span></li>
+        </ul>
+    </div>
+</div>
+
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&q=80&w=400"
+                alt="Red Velvet Cupcake">
+            <h3>Red Velvet Dream</h3>
+            <p>Classic cocoa-infused cake topped with tangy cream cheese frosting.</p>
+            <span class="price">₱110.00</span>
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="single">Single Cupcake</option>
+                    <option value="half-dozen">Box of 6 (₱600.00)</option>
+                    <option value="dozen">Box of 12 (₱1,150.00)</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Item 11: Cupcake 2 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&q=80&w=400"
+                alt="Dark Chocolate Cupcake">
+            <h3>Double Choco Fudge</h3>
+            <p>Moist dark chocolate cake with a rich ganache center and fudge icing.</p>
+            <span class="price">₱120.00</span>
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="single">Single Cupcake</option>
+                    <option value="half-dozen">Box of 6 (₱650.00)</option>
+                    <option value="dozen">Box of 12 (₱1,250.00)</option>
+                </select>
+                <ul class="add-ons-list">
+                    <li><label><input type="checkbox"> Extra Sprinkles</label> <span>+₱10</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Item 12: Cupcake 3 -->
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd-U5CxGvIw0Ri0oLXGerEo2xw_w-MDDAb5Q&s"
+                alt="Ube Cupcake">
+            <h3>Ube Halaya Swirl</h3>
+            <p>Authentic Filipino purple yam cake with a leche flan centerpiece.</p>
+            <span class="price">₱125.00</span>
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="single">Single Cupcake</option>
+                    <option value="half-dozen">Box of 6 (₱680.00)</option>
+                    <option value="dozen">Box of 12 (₱1,300.00)</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Item 13: Cupcake 4 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&q=80&w=400"
+                alt="Salted Caramel Cupcake">
+            <h3>Salted Caramel Crunch</h3>
+            <p>Vanilla bean base with salted caramel drizzle and crushed pretzels.</p>
+            <span class="price">₱115.00</span>
+            <div class="item-options">
+                <select class="size-select">
+                    <option value="single">Single Cupcake</option>
+                    <option value="half-dozen">Box of 6 (₱620.00)</option>
+                    <option value="dozen">Box of 12 (₱1,200.00)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Everglow Coffee House. Stay Warm.</p>
+    </footer>
+
+    <script>
+        function orderAlert() {
+            alert("Ordering system coming soon! Visit us in person for a fresh brew.");
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+       
+
+           
+
+       
+            
+           
+
+       
